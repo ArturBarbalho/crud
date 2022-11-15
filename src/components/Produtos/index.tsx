@@ -36,7 +36,7 @@ const prodFiltrer = prods.filter((e)=>{
 const produtos = prodFiltrer.map((e)=>{
   return(
     <>
-    <S.Produto  key={e.id}>
+    <S.Produto key={e.id}>
       <td onClick={()=>{description(e.description)}} >{e.name}</td>
       <td onClick={()=>{description(e.description)}}>{e.categorie}</td>
       <td onClick={()=>{description(e.description)}}>{e.price}</td>
