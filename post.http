@@ -1,0 +1,57 @@
+POST  http://localhost:3000/api/users/createUser
+Content-type: application/json
+
+{
+    "name" : "loid",
+    "email": "locom",
+    "password": "ana"
+}
+###
+GET http://localhost:3000/api/users/getUsers
+
+###
+POST  http://localhost:3000/api/users/login
+Content-type: application/json
+
+{
+    "email": "loid@gmail.com",
+    "password": "anya"
+}
+
+###
+GET http://localhost:3000/api/produtos/get
+
+
+
+###
+POST  http://localhost:3000/api/produtos/cadastrar
+Content-type: application/json
+
+{
+    "name": "srfgvg",
+    "price":52,
+    "description": "lorem",
+    "categorie":"sçdlk",
+    "userId":2
+
+}
+
+###
+PUT  http://localhost:3000/api/produtos/update
+Content-type: application/json
+
+{
+    "id":2,
+    "name": "goleirocassio"
+    
+
+}
+
+###
+DELETE  http://localhost:3000/api/produtos/delete
+Content-type: application/json
+
+{
+    "id":2
+    
+}
