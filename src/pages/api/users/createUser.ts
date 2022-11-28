@@ -10,5 +10,5 @@ export default async (req:NextApiRequest, res:NextApiResponse)=>{
     const passwordC = await bcrypt.hash(password, salt)
 
     const createUser = await createUserDB(name, email, passwordC)
-    res.json({result: createUser})
+    res.json({result: 'success'})
 }

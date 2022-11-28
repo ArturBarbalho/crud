@@ -14,8 +14,6 @@ export const getServerSideProps:GetServerSideProps = async (context)=>{
   const {req} = context 
   const cookies = cookie.parse(req.headers.cookie || '')
   axios.defaults.headers.common['Authorization'] = cookies.token
-  //const url = process.env.GET_PROD
-  //const data = await axios.get(`${url}/api/produtos/get`)
   const data = await axios.get('https://artcrud.netlify.app/api/produtos/get')
  return{
   props:{data:data.data.produtos}

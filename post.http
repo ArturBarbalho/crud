@@ -2,9 +2,9 @@ POST  http://localhost:3000/api/users/createUser
 Content-type: application/json
 
 {
-    "name" : "loid",
-    "email": "locom",
-    "password": "ana"
+    "name" : "viladbelmiro",
+    "email": "santods@gmail.com",
+    "password": "robgolbf"
 }
 ###
 GET http://localhost:3000/api/users/getUsers
@@ -14,8 +14,8 @@ POST  http://localhost:3000/api/users/login
 Content-type: application/json
 
 {
-    "email": "loid@gmail.com",
-    "password": "anya"
+    "email": "santods@gmail.com",
+    "password": "robgolbf"
 }
 
 ###

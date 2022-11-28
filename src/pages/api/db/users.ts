@@ -2,6 +2,7 @@ import { prisma } from "./db";
 
 
 export async function getUsersDB(){
+   
     return  prisma.public_users.findMany()
 }
 
